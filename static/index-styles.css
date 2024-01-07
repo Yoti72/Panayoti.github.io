@@ -1,5 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
+    background-color: lightblue;
   }
   
   .page-wrapper {
@@ -30,9 +35,9 @@ body {
 
   .middleground {
     transform: translateZ(-7px) scale(1.1);
-    width: 65% !important;
+    width: 90% !important;
     height: auto !important;
-    top: -140px !important;
+    top: -550px !important;
   }
   
   .background,
@@ -51,7 +56,7 @@ body {
     text-shadow: 0 0 5px black;;
   }
   
-  section {
+  section  {
     font-size: 2rem;
     padding: 2rem;
     background-color: black;
@@ -59,12 +64,29 @@ body {
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    z-index: 3;
+    height: 500px;
+
   }
 
+   .about p {
+    margin-top: -20px !important;
+    position: relative;
+  }
+
+
   .left-box, .right-box {
-    border: 1px solid white; 
+    border: 1px solid black; 
     flex: 1;
 }
+
+.left-box {
+    font-size: 6.3rem;
+}
+
+
 
 #navbar {
     display: flex;
@@ -108,4 +130,5 @@ body {
     text-decoration: none;
     display: inline-block;
     margin: 0 10px;
+    color: white;
 }

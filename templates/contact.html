@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link  type="text/css" rel="stylesheet" href="/static/contact-styles.css">
+    <title>Contact</title>
+   
 </head>
 <body>
+    <!--NavBar  fix logo-->
+    <header>
+        <!--<a class="logo" href="/"><img src="/static/logo.png" alt="logo"></a>-->
+        <a class="logo" href="/">Home</a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#">Feedback</a>
+        <p class="menu cta">Menu</p>
+    </header>
+    <div class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="#">Resume</a>
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="/static/mobile.js"></script>
+
+    <!-- CTA -->
+    <div class="cta-main">
+        <h1>Let's get in touch!</h1>
+        <p>Have a question or want to work together?</p>
+        <!--<a href="#">Contact Me</a>-->
+    </div>
+
+    <!--Submissison form -->
+<div class="submission-wrapper">
+    <div class="--Submissisonform">
+        <form action="/contact" method="POST">
+            <div class="name">
+               <!-- <label for="name">Name</label>-->
+                <input type="text" id="name" name="name" placeholder="Your name...">
+            </div>
+
+            <div class="email">
+                 <!-- <label for="email">Email</label>-->
+                <input type="text" id="email" name="email" placeholder="Your email...">
+            </div>
+
+            <div class="subject">
+             <!-- <label for="subject">Subject</label>-->
+            <textarea id="subject" name="subject" placeholder="Write a message!" style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+        </div>
+            
+           
+        </form>
+    </div>
+</div>
+
+    <!-- -->
+
+    <!-- Footer -->
+    <div class="footer--wrapper">
+        <div class="footer">
+            <h3>Let's Connect!</h3>
+            <p>Feel free to reach out to me on any of the following platforms!</p>
+            <div class="social--icons">
+                <a href="https://www.instagram.com/yoti619/?hl=en" target="_blank" ><img src="/static/Instagram.png" alt="Instagram"></a>
+                <a href="linkedin.com/in/panayoti-kourkoumelis-9a08bb1b6" target="_blank" ><img src="/static/linkin.png" alt="linkedin"></a>
+                <a href="https://github.com/Yoti72" target="_blank"><img src="/static/github.png" alt="github"></a>
+            </div>
+        </div>
+    </div>
     
 </body>
+
 </html>
+
+<!--  link for insta logo <a target="_blank" href="https://icons8.com/icon/32323/instagram">Instagram</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->

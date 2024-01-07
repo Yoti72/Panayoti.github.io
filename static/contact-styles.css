@@ -1,0 +1,282 @@
+ /* Colors styles for contact page
+ #0C356A dark blue
+ #0174BE blue
+ #FFC436 mustard
+ #FFF0CE pale yellow
+
+
+*/
+ 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-family: "Impact", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+    font-size: 90px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+  }
+
+  .cta-main p {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+  .cta-main {
+    background-image: url('/static/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #24252a;
+    color: #edf0f1;
+    padding: 100px 10%;
+    text-align: center;
+    height: 440px;
+  }
+
+
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: black;
+  }
+  
+  .logo {
+    cursor: pointer;
+    cursor: pointer;
+    color: #edf0f1;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+
+  }
+
+  .logo:hover {
+    color: #FFC436; /* Change to the color you want on hover */
+    transform: scale(1.1); /* Makes the logo 10% bigger on hover */
+}
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: color 0.3s ease 0s;
+    font-weight: bold;
+  }
+  
+  .nav__links li a:hover {
+    color: #FFC436 ;
+    transform: scale(1.1);
+
+  }
+  
+  .cta {
+    padding: 9px 25px;
+    background-color: #FFC436;  
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: #FFF0CE;
+  }
+  
+  /* Mobile Nav */
+  
+  .menu {
+    display: none;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+  }
+  
+  .overlay--active {
+    width: 100%;
+  }
+  
+  .overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #0088a9;
+  }
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .nav__links,
+    .cta {
+      display: none;
+    }
+    .menu {
+      display: initial;
+    }
+  }
+
+  .footer--wrapper {
+    background-color: #24252a;
+    color: #edf0f1;
+    padding: 50px 10%;
+  }
+
+  .submission-wrapper {
+    background-color: black;
+    color: #edf0f1;
+    padding: 50px 10%;
+  }
+
+  .--Submissisonform {
+    background-color: #FFF0CE;
+    color: black;
+    padding: 50px 10%;
+    display: grid;
+    grid-template-areas: 
+        "name email"
+        "subject subject";
+    gap: 10px;
+
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+ 
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    text-align: center;
+}
+
+textarea::placeholder {
+    font-size: 1.2rem;
+    text-align: center !important;
+}
+
+input [type="submit"] {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+
+
+  .--Submissisonform label,
+.--Submissisonform input,
+.--Submissisonform textarea {
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.--Submissisonform input[type="text"],
+.--Submissisonform textarea {
+    width: 100%;
+}
+
+.--Submissisonform input[type="text"] {
+    height: 40px;
+    width: 700px;
+}
+
+.social--icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+    
+}
+
+.social--icons img:hover {
+    transform: scale(1.5); 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.social--icons img {
+    margin: 0 10px; 
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+ .footer p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+  
