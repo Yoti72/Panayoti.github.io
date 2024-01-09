@@ -87,11 +87,14 @@
   .nav__links li a {
     transition: color 0.3s ease 0s;
     font-weight: bold;
+    transition: font-size 0.3s ease; 
+    font-size: 16px;
   }
   
   .nav__links li a:hover {
     color: #FFC436 ;
     transform: scale(1.1);
+    font-size: 18px;
 
   }
   
@@ -220,6 +223,19 @@ textarea::placeholder {
     text-align: center !important;
 }
 
+
+input[type="message"], textarea {
+    width: 60%; /* Make input fields take up the full width of their container */
+    padding: 12px 20px;
+    margin: 8px 0; 
+    box-sizing: border-box; 
+    border: 2px solid #ccc; 
+    border-radius: 4px; 
+    display: block;
+    margin: auto;
+
+}
+
 input [type="submit"] {
     padding: 9px 25px;
     background-color: rgba(0, 136, 169, 1);
@@ -227,6 +243,24 @@ input [type="submit"] {
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease 0s;
+}
+
+
+button[type="submit"] {
+    display: block;
+    margin: auto;
+    width: 60%;
+    padding: 10px 20px; 
+    box-sizing: border-box; 
+    border: 2px solid #ccc; 
+    border-radius: 4px;
+    background-color: black; 
+    color: white; 
+    cursor: pointer; 
+}
+
+button[type="submit"]:hover {
+    background-color: #FFC436;
 }
 
 

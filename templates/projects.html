@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="/static/project-styles.css">
+    <title>Projects</title>
 </head>
 <body>
     
+    <header>
+        <!--<a class="logo" href="/"><img src="/static/logo.png" alt="logo"></a>-->
+        <a class="logo" href="/">Home</a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">Resume</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/#about">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#">Feedback</a>
+        <p class="menu cta">Menu</p>
+    </header>
+
+
+    <main>
+        <div class="project">
+            <h2>Project 1</h2>
+            <p>Description of Project 1</p>
+            <div class="image-container">
+                <img src="/static/" alt="Project 1 Thumbnail">
+                <img class="hover-image" src="/static/" alt="Project 1 Image">
+            </div>
+            <a href="/project1">View Project</a>
+        </div>
+        
+        <div class="project">
+            <h2>Project 2</h2>
+            <p>Description of Project 2</p>
+            <div class="image-container">
+                <img src="/static/project2-thumbnail.jpg" alt="Project 2 Thumbnail">
+                <img class="hover-image" src="/static/project2-image.jpg" alt="Project 2 Image">
+            </div>
+            <a href="/project2">View Project</a>
+        </div>
+        
+
+
+        <script>
+            // JavaScript to handle hover effect
+            document.addEventListener('DOMContentLoaded', function () {
+                const projects = document.querySelectorAll('.project');
+    
+                projects.forEach(project => {
+                    const imageContainer = project.querySelector('.image-container');
+                    const thumbnail = imageContainer.querySelector('img:first-child');
+                    const hoverImage = imageContainer.querySelector('.hover-image');
+    
+                    project.addEventListener('mouseover', () => {
+                        thumbnail.style.display = 'none';
+                        hoverImage.style.display = 'block';
+                        hoverImage.style.opacity = '1';
+                        thumbnail.style.opacity = '0';
+                    });
+    
+                    project.addEventListener('mouseout', () => {
+                        thumbnail.style.display = 'block';
+                        hoverImage.style.display = 'none';
+                        hoverImage.style.opacity = '0';
+                        thumbnail.style.opacity = '1';
+                    });
+                });
+            });
+        </script>
+            
+
 </body>
 </html>
