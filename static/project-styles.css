@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: lightblue;
+    background-color: black;
 }
 
 h1 {
@@ -12,67 +12,74 @@ h1 {
 
 /* project-styles.css */
 
-/* Styles for the project section */
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-}
-
 /* Styles for individual project cards */
+
+
 .project {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
-    width: 300px;
+  background-color: #04353f;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 50px;
+  width: 800px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column !important;
+  color: white;
+
+
+
 }
 
 .project h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .project p {
-    font-size: 16px;
-    margin-bottom: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .project a {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: #a5ffd6;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project:hover {
+  box-shadow: 0 0 10px 5px #a5ffd6;
 }
 
 .project a:hover {
-    background-color: #0056b3;
+  transform: scale(1.04); 
+  transition: transform 0.3s ease-in-out;
 }
 
 
 /* Styles for the hover effect */
 .image-container {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .hover-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .project:hover .hover-image {
-    opacity: 1;
+  opacity: 1;
 }
+
 
 
 
@@ -99,7 +106,7 @@ header {
   }
 
   .logo:hover {
-    color: #FFC436; /* Change to the color you want on hover */
+    color: #a5ffd6; /* Change to the color you want on hover */
     transform: scale(1.1); /* Makes the logo 10% bigger on hover */
 }
   
@@ -130,7 +137,7 @@ header {
   }
   
   .nav__links li a:hover {
-    color: #FFC436 ;
+    color: #a5ffd6 ;
     transform: scale(1.1);
     font-size: 18px;
 
@@ -138,7 +145,7 @@ header {
   
   .cta {
     padding: 9px 25px;
-    background-color: #FFC436;  
+    background-color: #a5ffd6;  
     color: black;
     font-weight: bold;
     border: none;
@@ -148,7 +155,7 @@ header {
   }
   
   .cta:hover {
-    background-color: #FFF0CE;
+    background-color: #a5ffd6;
   }
   
   /* Mobile Nav */
@@ -190,7 +197,7 @@ header {
   
   .overlay a:hover,
   .overlay a:focus {
-    color: #0088a9;
+    color: #a5ffd6;
   }
   .overlay .close {
     position: absolute;

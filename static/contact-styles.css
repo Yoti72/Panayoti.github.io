@@ -5,6 +5,9 @@
  #FFF0CE pale yellow
 
 
+a5ffd6 cucumber
+005f73 dark blue
+
 */
  
 
@@ -61,7 +64,7 @@
   }
 
   .logo:hover {
-    color: #FFC436; /* Change to the color you want on hover */
+    color: #a5ffd6; /* Change to the color you want on hover */
     transform: scale(1.1); /* Makes the logo 10% bigger on hover */
 }
   
@@ -92,7 +95,7 @@
   }
   
   .nav__links li a:hover {
-    color: #FFC436 ;
+    color: #a5ffd6 ;
     transform: scale(1.1);
     font-size: 18px;
 
@@ -100,7 +103,7 @@
   
   .cta {
     padding: 9px 25px;
-    background-color: #FFC436;  
+    background-color: #a5ffd6;  
     color: black;
     font-weight: bold;
     border: none;
@@ -110,7 +113,7 @@
   }
   
   .cta:hover {
-    background-color: #FFF0CE;
+    background-color: #a5ffd6;
   }
   
   /* Mobile Nav */
@@ -126,7 +129,7 @@
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: #24252a;
+    background-color: black;
     overflow-x: hidden;
     transition: width 0.5s ease 0s;
   }
@@ -152,7 +155,7 @@
   
   .overlay a:hover,
   .overlay a:focus {
-    color: #0088a9;
+    color: #a5ffd6;
   }
   .overlay .close {
     position: absolute;
@@ -183,6 +186,8 @@
     }
   }
 
+
+
   .footer--wrapper {
     background-color: #24252a;
     color: #edf0f1;
@@ -196,7 +201,7 @@
   }
 
   .--Submissisonform {
-    background-color: #FFF0CE;
+    background-color: #a5ffd6;
     color: black;
     padding: 50px 10%;
     display: grid;
@@ -260,7 +265,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #FFC436;
+    background-color: #453d3d;
 }
 
 
