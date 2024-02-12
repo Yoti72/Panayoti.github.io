@@ -2,9 +2,18 @@ from flask import Flask
 #from flask_sqlalchemy import SQLAlchemy
 from views import views
 import os
+from flask_assets import Environment, Bundle
+import requests
+import configparser
 
 app = Flask(__name__)
 app.register_blueprint(views, url_prefix="/")
+
+assets = Environment(app)
+
+#js = Bundle('jquery.js', 'base.js', 'widgets.js',
+#            filters='jsmin', output='gen/packed.js')
+#assets.register('js_all', js)
 
 # Configure Flask-SQLAlchemy
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
@@ -18,7 +27,7 @@ app.register_blueprint(views, url_prefix="/")
 
 # to run the website
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
 
 
 #@app.route('/contact', methods=['POST'])
